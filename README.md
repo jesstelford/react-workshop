@@ -17,7 +17,7 @@ and feel free to ask your instructors questions as you go.
 
 Now that you're all set up and ready to go, let's get started on Lesson 1:
 
-[» Lesson 1 - `npm`](lesson_1.md)
+[» Lesson 1 - setup](lesson_1.md)
 
 # TOC
 
