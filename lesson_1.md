@@ -25,7 +25,7 @@ We now have the required `package.json` file.
 
 ## Setup Files
 
-There is a folder we want to store out code in, let's create it now;
+There is a folder we want to store our code in, let's create it now;
 
 ```bash
 mkdir -p lib
