@@ -43,7 +43,7 @@ module.exports = 'foo'
 
 ### `require`
 
-`require` is a functoin which you pass a module name to import:
+`require` is a function which you pass a module name to import:
 
 `output.js`
 ```javascript

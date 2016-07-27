@@ -79,7 +79,7 @@ function MyComponent({isAwesome = false}) {
 
 ## Challenge 5
 
-Set the default value of `MenuItem`s `isActive` prop to `false`.
+Set the default value of `MenuItem`'s `isActive` prop to `false`.
 
 Try changing it to `true` and see what effect it has on the element you *didn't*
 pass `isActive={true}` to. (Don't forget to change it back to `false`)
