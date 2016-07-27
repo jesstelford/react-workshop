@@ -102,7 +102,7 @@ Hints:
 
 ## Using State
 
-As with default _props_, comonents can have default _state_. A common pattern
+As with default _props_, components can have default _state_. A common pattern
 (although [one which is not always
 recommended](https://facebook.github.io/react/tips/props-in-getInitialState-as-anti-pattern.html))
 is to base initial state on the passed in props thanks to the [`getInitialState`
