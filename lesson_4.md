@@ -9,8 +9,7 @@ messy pretty quick. So let's split some things out.
 
 ## Challenge 2
 
-Move `MenuItem` into its own file which is also included into the `index.html`
-page. The new file will be called `lib/menu-item.js`.
+Move the component `MenuItem` into a new file called `lib/menu-item.js` (be sure to leave the code that renders the component itself). Then, modify `index.html` so that it loads this new file as a script.
 
 ---
 
@@ -113,6 +112,8 @@ mkdir -p src/js
 mv lib/app.js src/js/index.js
 ```
 
+At this point, `src/js/index.js` should contain the code that renders the `<ul>` that contains the component that creates our `<li>` tags.
+
 We also want to move our new `lib/menu-item.js` file too:
 
 ```
@@ -124,6 +125,7 @@ Now our folder structure should look like this:
 ```
 .
 ├── lib
+│   └── app.js
 │   └── index.html
 ├── node_modules
 │   └── ...
@@ -157,12 +159,11 @@ module.exports = MenuItem
 
 ### `require`ing
 
-Now to use that `MenuItem`, which is no longer a global variable, we can
+Now to use the `MenuItem` component, which is no longer available globally, we can
 `require()` the `src/js/menu-item.js` file into our `src/js/index.js` file.
 
 Add the following line to the top of your `src/js/index.js` file:
 
-`src/js/index.js`
 ```javascript
 let MenuItem = require('./menu-item')
 ```
@@ -188,7 +189,7 @@ the same output we had before.
 
 ### Cleanup
 
-The last piece is to remove the unnecessary extra `<script src="menu-item.js">` tag from the HTML since we no longer need it (Browserify has bundled all that up together into `lib/app.js` for us!).
+The last piece is to remove the now unnecessary `<script src="menu-item.js">` code from `index.html`. We no longer need it since Browserify has bundled all that up together into `lib/app.js` for us!
 
 ---
 
