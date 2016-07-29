@@ -9,7 +9,7 @@ messy pretty quick. So let's split some things out.
 
 ## Challenge 2
 
-Move the component `MenuItem` into a new file called `lib/menu-item.js` (be sure to also include the code that renders the component itself). Then, modify `index.html` so that it loads this new file as a script.
+Move the component `MenuItem` into a new file called `lib/menu-item.js` (be sure to leave the code that renders the component itself). Then, modify `index.html` so that it loads this new file as a script.
 
 ---
 
@@ -112,6 +112,8 @@ mkdir -p src/js
 mv lib/app.js src/js/index.js
 ```
 
+At this point, `src/js/index.js` should contain the code that renders the `<ul>` that contains the component that creates our `<li>` tags.
+
 We also want to move our new `lib/menu-item.js` file too:
 
 ```
@@ -157,13 +159,13 @@ module.exports = MenuItem
 
 ### `require`ing
 
-Now to use the `MenuItem` component, which no longer available globally, we can
+Now to use the `MenuItem` component, which is no longer available globally, we can
 `require()` the `src/js/menu-item.js` file into our `src/js/index.js` file.
 
 Add the following line to the top of your `src/js/index.js` file:
 
 ```javascript
-let menuItem = require('./menu-item')
+let MenuItem = require('./menu-item')
 ```
 
 _Note that we used a relative path here (`./`) as the two files are in the same
