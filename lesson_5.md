@@ -66,9 +66,10 @@ identical when executed, but is much easier to read when coding!
 Let's install some required tools to get us up and running:
 
 ```bash
-npm install --save-dev babelify babel-preset-react babel-preset-es2015
+npm install --save-dev babel-core babelify babel-preset-react babel-preset-es2015
 ```
 
+- `babel-core` is the core Babel compiler
 - `babelify` is a tool which tells Browserify how to handle this code when it
   is seen
 - `babel-preset-react` tells Babel that we want to handle react-specific (ie;
