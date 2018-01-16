@@ -13,7 +13,7 @@ React.render(
 ```
 
 In JSX, these attributes are known as *props*, and are available from within the
-component as the frist function parameter:
+component as the first function parameter:
 
 ```javascript
 function MyComponent(props) {
