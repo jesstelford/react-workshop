@@ -71,6 +71,7 @@ A basic project is now setup. The folder structure should look like:
 .
 ├── lib
 │   └── index.html
+│   └── app.js
 └── package.json
 ```
 
