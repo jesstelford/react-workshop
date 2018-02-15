@@ -87,12 +87,12 @@ the
 method:
 
 > ```
-  ReactElement cloneElement(
-    ReactElement element,
-    [object props],
-    [children ...]
-  )
-  ```
+> ReactElement cloneElement(
+>   ReactElement element,
+>   [object props],
+>   [children ...]
+> )
+> ```
 > *Clone and return a new ReactElement using element as the starting point. The
 > resulting element will have the original element's props with the new props
 > merged in shallowly.*
